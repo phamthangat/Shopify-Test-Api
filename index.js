@@ -21,6 +21,9 @@ app.get('/', (req,res) => {
   }
   res.json({message: body })
 })
+app.get('/test',(req,res) => {
+  res.send("hello")
+})
 const port = process.env.port || 3000;
 
 app.listen(3000, () => {
